@@ -6,6 +6,10 @@ body {
     font-family: 'PT Mono', monospace;
 }
 
+p {
+    font-family: 'Lora', serif;
+}
+
 /*---------------------------Navbar Section*/
 
 .navbar-brand {
@@ -43,6 +47,14 @@ body {
     color: white;
 }
 
+/*---------------------------Carbon Footprint Section*/
+
+.carbon {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
 /*---------------------------Media Queries Section*/
 
 @media screen and (max-width: 767px) {
@@ -51,6 +63,11 @@ body {
         background-image: ("../images/beach800.jpg");
         height: 400px;
         min-width: 375px;
+    }
+
+    iframe {
+        height: 600px;
+        width: 350px;
     }
 
 }
