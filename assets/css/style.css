@@ -1,0 +1,25 @@
+/*---------------------------Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=PT+Mono&display=swap');
+
+body {
+    /* font-family: 'Lora', serif; */
+    font-family: 'PT Mono', monospace;
+}
+
+
+
+/*---------------------------Navbar section*/
+
+.navbar-brand {
+    padding-left: 30px;
+    font-size: 25px;
+
+}
+
+#navbar {
+    background-color: beige;
+}
+
+#navbar-list {
+    justify-content: center;
+}
