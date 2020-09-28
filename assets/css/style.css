@@ -53,9 +53,18 @@ h4 {
 
 /*---------------------------Country Section*/
 
+.hide {
+    display: none;
+}
+
 .country-info {
     font-size: 20px;
     color: red;
+}
+
+.api-photo {
+    display: inline;
+    padding-top: 50px;
 }
 
 /*---------------------------Carbon Footprint Section*/
