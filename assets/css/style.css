@@ -10,6 +10,10 @@ p {
     font-family: 'Lora', serif;
 }
 
+h4 {
+    font-size: 25px;
+}
+
 /*---------------------------Navbar Section*/
 
 .navbar-brand {
@@ -45,6 +49,13 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+/*---------------------------Country Section*/
+
+.country-info {
+    font-size: 20px;
+    color: red;
 }
 
 /*---------------------------Carbon Footprint Section*/
