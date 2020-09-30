@@ -70,7 +70,11 @@ h4 {
 /*---------------------------Cities Section*/
 
 div#map {
-    min-height: 400px;
+    height: 700px;
+}
+
+#resultsTable {
+    width: 100%;
 }
 
 /*---------------------------Carbon Footprint Section*/

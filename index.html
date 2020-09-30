@@ -35,7 +35,7 @@
                     <a class="nav-link" href="#countries">Countries</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#city-ideas">Cities</a>
+                    <a class="nav-link" href="#cities">Cities</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#carbon-footprint">Carbon Footprint</a>
@@ -48,8 +48,8 @@
 
     <!--Cover Section-->
 
-    <section>
-        <div id="cover" class="container-fluid cover-image">
+    <section id="cover">
+        <div class="container-fluid cover-image">
             <div class="row">
                 <div class="image-text">
                     <h1>Your Adventure Starts Here!</h1>
@@ -65,7 +65,7 @@
 
     <!--Country Section-->
 
-    <section>
+    <section id="countries">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -77,7 +77,7 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <label for "country-select">Choose a Country</label>
-                            <select name="country" id="country-list">
+                            <select name="country-list-options" id="country-list">
                                 <option value="Austria">Austria</option>
                                 <option value="Belgium">Belgium</option>
                                 <option value="Croatia">Croatia</option>
@@ -142,20 +142,22 @@
 
     <!--City Section-->
 
-    <section>
+    <section id="cities">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="row">
                         <div class="col-md-12">
                             <h2>Explore what your chosen destination has to offer</h2>
+                            <br>
                             <div class="list-search">
                                 <div id="controls">
                                     <select id="country">
+                                        <!-- <option value="all">All</option> -->
                                         <option value="au">Austria</option>
                                         <option value="be">Belgium</option>
                                         <option value="cr">Croatia</option>
-                                        <option value="Cy">Cyprus</option>
+                                        <option value="cy">Cyprus</option>
                                         <option value="cz">Czech Republic</option>
                                         <option value="dm">Denmark</option>
                                         <option value="fr">France</option>
@@ -166,11 +168,11 @@
                                         <option value="pt">Portugal</option>
                                         <option value="sp">Spain</option>
                                         <option value="sw">Sweden</option>
-                                        <option value="uk selected">UK</option>
+                                        <option value="uk" selected>UK</option>
                                     </select>
                                 </div>
                                 <div id="locationField">
-                                    <input type="text" id="autocomplete" placeholder="Enter a city">
+                                    <input id="autocomplete" placeholder="Enter a city" type="text" />
                                 </div>
                                 <div>
                                     <button id="hotel">Hotels</button>
@@ -180,10 +182,59 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="listing">
+                                <table id="resultsTable">
+                                    <tbody id="results"></tbody>
+                                </table>
+                            </div>
+                            <div style="display: none">
+                                <div id="info-content">
+                                    <table>
+                                        <tr id="iw-url-row" class="iw_table_row">
+                                            <td id="iw-icon" class="iw_table_icon"></td>
+                                            <td id="iw-url"></td>
+                                        </tr>
+                                        <tr id="iw-address-row" class="iw_table_row">
+                                            <td class="iw_attribute_name">Address:</td>
+                                            <td id="iw-address"></td>
+                                        </tr>
+                                        <tr id="iw-phone-row" class="iw_table_row">
+                                            <td class="iw_attribute_name">Telephone:</td>
+                                            <td id="iw-phone"></td>
+                                        </tr>
+                                        <tr id="iw-rating-row" class="iw_table_row">
+                                            <td class="iw_attribute_name">Rating:</td>
+                                            <td id="iw-rating"></td>
+                                        </tr>
+                                        <tr id="iw-website-row" class="iw_table_row">
+                                            <td class="iw_attribute_name">Website:</td>
+                                            <td id="iw-website"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--End of City Section-->
