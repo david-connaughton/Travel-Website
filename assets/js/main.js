@@ -26,8 +26,7 @@ $(document).ready(function () {
                 <h4>Country:<span class="country-info">${data[i].name}</span></h4>
                 <h4>Capital:<span class="country-info">${data[i].capital}</span></h4>
                 <h4>Population:<span class="country-info">${data[i].population}</span></h4>
-                <h4>Currency:<span class="country-info">${data[i].currencies[0].name}</span></h4>
-                <h4>Borders:<span class="country-info">${data[i].borders}</span></h4>`);
+                <h4>Currency:<span class="country-info">${data[i].currencies[0].name}</span></h4>`);
                 $(".selected-country").append(`${data[i].name}`);
             }
         });
@@ -63,3 +62,17 @@ $(document).ready(function () {
         });
     });
 })
+
+// City Map Section
+
+let map
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: {
+            lat: 53.14,
+            lng: -7.69
+        },
+        zoom: 8
+    })
+}

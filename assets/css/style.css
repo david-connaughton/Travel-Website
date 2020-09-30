@@ -67,6 +67,12 @@ h4 {
     padding-top: 50px;
 }
 
+/*---------------------------Cities Section*/
+
+div#map {
+    min-height: 400px;
+}
+
 /*---------------------------Carbon Footprint Section*/
 
 .carbon {
