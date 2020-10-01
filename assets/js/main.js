@@ -64,20 +64,6 @@ $(document).ready(function () {
     });
 })
 
-// City Map Section
-
-// let map
-
-// function initMap() {
-//     map = new google.maps.Map(document.getElementById("map"), {
-//         center: {
-//             lat: 53.14,
-//             lng: -7.69
-//         },
-//         zoom: 8
-//     })
-// }
-
 // Define Map Variables
 
 let map;
@@ -86,7 +72,7 @@ let infoWindow;
 let markers = [];
 let autocomplete;
 const countryRestrict = {
-    country: "uk"
+    country: "au"
 };
 const MARKER_PATH =
     "https://developers.google.com/maps/documentation/javascript/images/marker_green";
@@ -100,105 +86,105 @@ const countries = {
             lat: 47.5,
             lng: 14.6
         },
-        zoom: 5,
+        zoom: 6,
     },
     be: {
         center: {
             lat: 50.5,
             lng: 4.5
         },
-        zoom: 5,
+        zoom: 6,
     },
     cr: {
         center: {
             lat: 45.1,
             lng: 15.2
         },
-        zoom: 5,
+        zoom: 7,
     },
     cy: {
         center: {
             lat: 31.1,
             lng: 33.4
         },
-        zoom: 5,
+        zoom: 6,
     },
     cz: {
         center: {
             lat: 49.8,
             lng: 15.5
         },
-        zoom: 5,
+        zoom: 6,
     },
     dm: {
         center: {
             lat: 56.3,
             lng: 9.5
         },
-        zoom: 5,
+        zoom: 6,
     },
     fr: {
         center: {
             lat: 46.2,
             lng: -2.2
         },
-        zoom: 5,
+        zoom: 6,
     },
     gr: {
         center: {
             lat: 39.1,
             lng: 21.8
         },
-        zoom: 5
+        zoom: 6,
     },
     ie: {
         center: {
             lat: 53.1,
             lng: -7.7
         },
-        zoom: 5
+        zoom: 6,
     },
     it: {
         center: {
             lat: 41.9,
             lng: 12.6
         },
-        zoom: 5
+        zoom: 6,
     },
     pl: {
         center: {
             lat: 51.9,
             lng: 19.1
         },
-        zoom: 5
+        zoom: 6,
     },
     pt: {
         center: {
             lat: 39.4,
             lng: -8.2
         },
-        zoom: 5
+        zoom: 6,
     },
     sp: {
         center: {
             lat: 40.5,
             lng: -3.7
         },
-        zoom: 5
+        zoom: 6,
     },
     sw: {
         center: {
             lat: 60.1,
             lng: 18.6
         },
-        zoom: 5
+        zoom: 5,
     },
     uk: {
         center: {
             lat: 54.8,
             lng: -4.6
         },
-        zoom: 5
+        zoom: 6,
     },
 };
 
@@ -206,8 +192,8 @@ const countries = {
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: countries["uk"].zoom,
-        center: countries["uk"].center,
+        zoom: countries["au"].zoom,
+        center: countries["au"].center,
         mapTypeControl: false,
         panControl: false,
         zoomControl: false,
