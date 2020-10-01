@@ -270,6 +270,12 @@ function onPlaceChanged() {
             findRestaurant();
         }
     });
+
+    // Reset/Change City option added to clear city autocomplete
+
+    $("#reset").click(function () {
+        $(".autocomplete").val("");
+    });
 }
 
 // Search for Hotels in the selected city
