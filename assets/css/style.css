@@ -131,9 +131,16 @@ div#map {
         min-width: 375px;
     }
 
-    #carbon-calculator {
-        height: 600px;
-        width: 350px;
+    iframe {
+        display: none;
+    }
+
+    .iframe-mobile-text {
+        display: block;
+    }
+
+    .iframe-disclaimer {
+        display: none;
     }
 
 }
@@ -145,12 +152,28 @@ div#map {
         height: 600px;
     }
 
+    .iframe-mobile-text {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .iframe-mobile-text {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
 
     .cover-image {
         background-image: ("../images/beach2000.jpg");
+    }
+
+    .iframe-mobile-text {
+        display: none;
     }
 
 }
