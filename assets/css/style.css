@@ -1,17 +1,21 @@
 /*---------------------------Import Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=PT+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+/*---------------------------Fonts & Text*/
 
 body {
-    /* font-family: 'Lora', serif; */
     font-family: 'PT Mono', monospace;
-}
-
-p {
-    font-family: 'Lora', serif;
+    color: #032059;
+    background-color: #E0DDD8;
 }
 
 h4 {
     font-size: 25px;
+}
+
+h2 {
+    padding-top: 50px;
 }
 
 /*---------------------------Navbar Section*/
@@ -19,15 +23,19 @@ h4 {
 .navbar-brand {
     padding-left: 30px;
     font-size: 25px;
-
+    color: #ffffff !important;
 }
 
 #navbar {
-    background-color: beige;
+    background-color: #BF9F9F;
 }
 
 #navbar-list {
     justify-content: center;
+}
+
+.nav-link {
+    color: #ffffff !important;
 }
 
 /*---------------------------Cover Section*/
@@ -59,12 +67,25 @@ h4 {
 
 .country-info {
     font-size: 20px;
-    color: red;
+}
+
+.country-list-area {
+    padding-bottom: 50px;
 }
 
 .api-photo {
     display: inline;
     padding-top: 50px;
+}
+
+.action-button {
+    color: #032059;
+    background-color: #ffffff;
+    border-color: #032059;
+}
+
+.article-url {
+    color: #266AA6;
 }
 
 /*---------------------------Cities Section*/
@@ -77,13 +98,28 @@ div#map {
     width: 100%;
 }
 
-/*---------------------------Carbon Footprint Section*/
-
-.carbon {
-    text-align: center;
-    padding-top: 50px;
+.city-p {
+    margin-bottom: 0px;
 }
 
+/*---------------------------Carbon Footprint Section*/
+
+#carbon-calculator {
+    height: 500px;
+    width: 600px;
+    border-width: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/*---------------------------Footer Section*/
+
+.footer-detail {
+    background-color: #BF9F9F;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /*---------------------------Media Queries Section*/
 
@@ -95,7 +131,7 @@ div#map {
         min-width: 375px;
     }
 
-    iframe {
+    #carbon-calculator {
         height: 600px;
         width: 350px;
     }
@@ -116,4 +152,5 @@ div#map {
     .cover-image {
         background-image: ("../images/beach2000.jpg");
     }
+
 }

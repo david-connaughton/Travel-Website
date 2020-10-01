@@ -1,6 +1,14 @@
-// Country Section
+// Country & Cover Section
 
 $(document).ready(function () {
+
+    // Cover Fade-in
+
+    $(".image-text").css("display", "none");
+    $(".image-text").fadeIn(2000);
+
+    // Country Section
+
     $("#country-selector").click(function () {
 
         var query_country = $("#country-list").val();
@@ -44,7 +52,7 @@ $(document).ready(function () {
                 $("#national-tourism-articles").append(`<h4>${articles[i].headline.main}</h4>
                 <br>
                 <p>${articles[i].snippet}</p>
-                <a href = "${articles[i].web_url}" target="_blank">Full Article</a>
+                <a href = "${articles[i].web_url}" target="_blank" class="article-url">Full Article</a>
                 <br><br>`);
             }
         });
@@ -58,7 +66,7 @@ $(document).ready(function () {
         $.getJSON(`${picture_endpoint}${picture_apiKey}${picture_query}${query_country}`, function (data) {
             var photos = data.hits;
             for (var i = 0; i < 9; i++) {
-                $("#photo").append(`<div class="api-photo"><img src="${photos[i].largeImageURL}" height="300px" width="300px"></div>`);
+                $("#photo").append(`<div class="api-photo"><img src="${photos[i].largeImageURL}" alt="Pictures of selected Country" height="300px" width="300px"></div>`);
             }
         });
     });
@@ -72,7 +80,7 @@ let infoWindow;
 let markers = [];
 let autocomplete;
 const countryRestrict = {
-    country: "au"
+    country: "at"
 };
 const MARKER_PATH =
     "https://developers.google.com/maps/documentation/javascript/images/marker_green";
@@ -81,7 +89,7 @@ const hostnameRegexp = new RegExp("^https?://.+?/");
 // Set Country Coordinates
 
 const countries = {
-    au: {
+    at: {
         center: {
             lat: 47.5,
             lng: 14.6
@@ -95,7 +103,7 @@ const countries = {
         },
         zoom: 6,
     },
-    cr: {
+    hr: {
         center: {
             lat: 45.1,
             lng: 15.2
@@ -116,7 +124,7 @@ const countries = {
         },
         zoom: 6,
     },
-    dm: {
+    dk: {
         center: {
             lat: 56.3,
             lng: 9.5
@@ -165,21 +173,21 @@ const countries = {
         },
         zoom: 6,
     },
-    sp: {
+    es: {
         center: {
             lat: 40.5,
             lng: -3.7
         },
         zoom: 6,
     },
-    sw: {
+    se: {
         center: {
             lat: 60.1,
             lng: 18.6
         },
         zoom: 5,
     },
-    uk: {
+    gb: {
         center: {
             lat: 54.8,
             lng: -4.6
@@ -192,8 +200,8 @@ const countries = {
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: countries["au"].zoom,
-        center: countries["au"].center,
+        zoom: countries["at"].zoom,
+        center: countries["at"].center,
         mapTypeControl: false,
         panControl: false,
         zoomControl: false,
