@@ -38,7 +38,7 @@ This website has numerous further development options, which can be scoped for f
 
 # Technologies Used
 
-This website is constructed using Visual Studio Code. The programming languages utilised are HTML, CSS and Javascript (complemeted with jQuery and Bootstrap). Various APIs are also utilised and are listed in the Credits section.
+This website is constructed using Visual Studio Code. The programming languages utilized are HTML, CSS and Javascript (complemeted with jQuery and Bootstrap). I used Balsamiq for Wireframes and Adobe Color Wheel for Colour Scheme. Various APIs are also utilized and are listed in the Credits section.
 
 # Testing
 
