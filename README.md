@@ -56,4 +56,7 @@ The site is available [here.](https://david-connaughton.github.io/Travel-Website
 - The Cover image section is inspired by [this](https://www.w3schools.com/howto/howto_css_hero_image.asp) tutorial.
 - The Countries section utilises [Rest Countries, ](https://restcountries.eu/) [New York Times ](https://developer.nytimes.com/docs/articlesearch-product/1/overview) and [Pixabay](https://pixabay.com/api/docs/) APIs.
 - The Cities and Map section utilises the Google Maps and Places library API. I sought inspiration from the [Hotel Search](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch) example and both customized and expanded on the code example for further features and countries.
+
+* The Carbon Footprint section contains an embedded calculator from [this](https://www.carbonfootprint.com/) site.
+
 - All API keys are free and non-proprietary. My Google Maps API key is protected and limited to usage on this site.
